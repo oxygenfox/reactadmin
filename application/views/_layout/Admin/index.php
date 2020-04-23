@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?=PATH_ASSETS ?>plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bbootstrap 4 -->
@@ -16,8 +17,10 @@
   <link rel="stylesheet" href="<?=PATH_ASSETS ?>plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="<?=PATH_ASSETS ?>plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="<?=PATH_ASSETS ?>plugins/toastr/toastr.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?=PATH_ASSETS ?>dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?=PATH_ASSETS ?>dist/css/style.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?=PATH_ASSETS ?>plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
@@ -30,10 +33,51 @@
   <script src="<?=PATH_ASSETS ?>plugins/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
   <script src="<?=PATH_ASSETS ?>plugins/jquery-ui/jquery-ui.min.js"></script>
+  <style type="text/css">
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: #ffffffb9;
+    }
+
+    .preloader .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font: 14px arial;
+    }
+
+
+  </style>
+  <script>
+    $(document).ready(function() {
+      setTimeout(function() {
+        $(".preloader").fadeOut();
+      }, 1000);
+      var page = window.location.hash.substr(1);
+      if (page == "") page = "admin/dashboard";
+      $('#show_data').load('<?= site_url() ?>' + '/' + page);
+    });
+  </script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
-  <div class="wrapper">
 
+  <div class="preloader">
+    <div class="loading">
+      <img src="<?= base_url() ?>assets/img/loader.gif" width="300">
+      <p class="text-center">
+        Harap Tunggu
+      </p>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
@@ -105,7 +149,7 @@
       <!-- Sidebar -->
       <div class="sidebar">
         <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="menu">
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -137,6 +181,69 @@
 
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
+    $(document).ready(function() {
+      toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": false,
+        "positionClass": "toast-top-center",
+        "preventDuplicates": false,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "2000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+      $.ajax({
+        url: '<?= site_url('admin/menu') ?>',
+        type: 'post',
+        dataType: 'json',
+        success: function(data) {
+          var menu = ''
+          for (var i = 0; i < data.length; i++) {
+            var sub = '';
+            for (var j = 0; j < data[i].submenu.length; j++) {
+              submenu = '<li class="nav-item" data-url="' + data[i].submenu[j].url + '">' +
+              '<a href="#' + data[i].submenu[j].url + '" class="nav-link">' +
+              '<i class="' + data[i].submenu[j].icon + ' nav-icon"></i>' +
+              '<p>' + data[i].submenu[j].title + '</p>' +
+              '</a>' +
+              '</li>';
+              sub += submenu;
+            }
+            menu += '<li class="nav-item has-treeview">' +
+            '<a href="#" class="nav-link">' +
+            '<i class="nav-icon ' + data[i].icon + '"></i>' +
+            '<p>' +
+            data[i].title +
+            '<i class="right fas fa-angle-left"></i>' +
+            '</p>' +
+            '</a>' +
+            '<ul class="nav nav-treeview submenu" >' + sub + '</ul>' +
+            '</li>';
+          }
+          $('#menu').html(menu);
+          $('.nav-link').click(function() {
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
+          });
+          $('.submenu').on('click', '.nav-item', function() {
+            url = $(this).data('url');
+            $('#show_data').load('<?= site_url() ?>' + '/' + url);
+          });
+        }
+      });
+      // $('#profile').click(function() {
+      //     $('#show_data').load('<?= site_url('profile') ?>');
+      // })
+
+    });
+  </script>
+  <script>
     $.widget.bridge('uibutton', $.ui.button)
   </script>
   <!-- Bootstrap 4 -->
@@ -144,7 +251,7 @@
   <!-- ChartJS -->
   <script src="<?=PATH_ASSETS ?>plugins/chart.js/Chart.min.js"></script>
   <!-- Sparkline -->
-  <!--<script src="<?=PATH_ASSETS ?>plugins/sparklines/sparkline.js"></script>-->
+  <script src="<?=PATH_ASSETS ?>plugins/toastr/toastr.min.js"></script>
   <!-- JQVMap -->
   <script src="<?=PATH_ASSETS ?>plugins/jqvmap/jquery.vmap.min.js"></script>
   <script src="<?=PATH_ASSETS ?>plugins/jqvmap/maps/jquery.vmap.usa.js"></script>

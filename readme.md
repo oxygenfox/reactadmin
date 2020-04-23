@@ -40,17 +40,82 @@ License: Open source - MIT <http://opensource.org/licenses/MIT>
 Make New Folder <br />
 <br />
 OwnFolder
--controllers
-- Own_controller.php
+- controllers
+- Own.php
 - Models
 - Own_models.php
 - Views
-- Own_views.php
+- index.php
 
-Own_controller.php
+Own.php
 
+```php
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Own extends MX_Controller {
+
+  public function index() {
+
+    //Something Code
+    $data = [
+        'title' => 'BLANK PAGE'
+    ]
+
+    //Custom JS Uncomment If You Want
+    // $this->load->view('core/js');
+
+    // Views
+    $this->load->view('index', $data);
+  }
+
+    // ETC
+
+}
+```
+<br/>
 
 Own_models.php
 
+```php
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+class Own_model extends CI_Model
+{
+    function __construct()
+    {
+       //somecode
+    }
 
+    public function somecode()
+    {
+        //somecode
+    }
+
+   
+}
+
+```
 Own_views.php
+
+```html
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <!-- SYMLINK WITH CONTROLLER -->
+                <h1 class="m-0 text-dark"><?= $title ?></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- CONTENT -->
+    </div>
+</section>
+
+```

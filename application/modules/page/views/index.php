@@ -1,20 +1,24 @@
 <script>
-    $(document).ready(function() {
-        $(".preloader").fadeOut();
-    })
+	$(document).ready(function() {
+		$(".preloader").fadeOut();
+	})
 </script>
 <section class="content">
-	<div class="error-page">
-		<h2 class="headline text-yellow"> 403</h2>
-
-		<div class="error-content">
-			<h3><i class="fa fa-warning text-yellow"></i> Hayo Mau ngapain ???</h3>
-
-			<p>
-				<a href="<?= site_url('admin') ?>">Balik ya !</a>
-			</p>
+	<div class="container-fluid">
+		<div class="error-page">
+			<div id="notfound">
+				<div class="notfound">
+					<div class="notfound-404"></div>
+					<h1>403</h1>
+					<h2>Oops! You Dont Have Access </h2>
+					<p>Sorry but you dont have access to the page you are looking! </p>
+					<a href=" <?= base_url('admin') ?> ">Back to homepage</a>
+				</div>
+			</div>
 		</div>
-		<!-- /.error-content -->
 	</div>
-	<!-- /.error-page -->
 </section>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="<?= base_url(); ?>assets/dist/error/css/style.css" />

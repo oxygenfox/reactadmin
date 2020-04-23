@@ -34,6 +34,7 @@
   <script src="<?= PATH_ASSETS ?>plugins/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
   <script src="<?= PATH_ASSETS ?>plugins/jquery-ui/jquery-ui.min.js"></script>
+
   <script>
     $(document).ready(function() {
       setTimeout(function() {
@@ -211,9 +212,31 @@
             $('.nav-link').removeClass('active');
             $(this).addClass('active');
           });
-          $('.submenu').on('click', '.nav-item', function() {
-            url = $(this).data('url');
-            $('#show_data').load('<?= site_url() ?>' + '/' + url);
+          // $('.submenu').on('click', '.nav-item', function() {
+          //   url = $(this).data('url');
+          //   $('#show_data').load('<?= site_url() ?>' + '/' + url);
+          // });
+          $('.submenu').on('click', 'li', function() {
+            link = $(this).data('url');
+            $.ajax({
+              url: '<?= site_url() ?>' + link,
+              type: 'get',
+              success: function(data) {
+                $('#show_data').html(data);
+              },
+              error: function(status) {
+                let html = '<section class="content">' +
+                  '<div class="d-flex justify-content-center align-items-center mt-20" id="mnsn">' +
+                  '<h1 class="mr-3 pr-3 mt-20 align-top border-right inline-block align-content-center">' + status.status + '</h1>' +
+                  '<div class="inline-block align-middle">' +
+                  '<h2 class="font-weight-normal lead" id="desc">' + status.statusText + '</h2>' +
+                  '</div>' +
+                  '</div>' +
+                  '</section>';
+                // console.log(status.status);
+                $('#show_data').html(html);
+              }
+            })
           });
         }
       });
@@ -226,6 +249,7 @@
   <script>
     $.widget.bridge('uibutton', $.ui.button)
   </script>
+
   <!-- Bootstrap 4 -->
   <script src="<?= PATH_ASSETS ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- ChartJS -->

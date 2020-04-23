@@ -37,9 +37,9 @@
   <div class="menu">
     <span class="close-menu icon-cross2 right-boxed"></span>
     <div class="menu-lang right-boxed">
-      <a href="" class="active">Eng</a>
-      <a href="">Fra</a>
-      <a href="">Ger</a>
+      <!--<a href="" class="active">Eng</a>-->
+      <!--<a href="">Fra</a>-->
+      <!--<a href="">Ger</a>-->
     </div>
     <ul class="menu-list right-boxed">
       <li data-menuanchor="page1">
@@ -69,7 +69,9 @@
         <a href="" class="icon ion-social-linkedin"></a>
         <a href="" class="icon ion-social-dribbble-outline"></a>
       </div>
-      <div class="copy">© Jonny 2017. All Rights Reseverd<br> Design by LoganCee</div>
+      <div class="copy">
+        © reactmore <?= date('Y') ?>. All Rights Reseverd<br> Design by More
+      </div>
     </div>
   </div>
 
@@ -86,8 +88,12 @@
     <a class="brand" href="#">
       <img class="brand-img" alt="" src="<?= PATH_ASSETS ?>front/images/brand.png">
       <div class="brand-info">
-        <div class="brand-name">Jonny</div>
-        <div class="brand-text">creative template</div>
+        <div class="brand-name">
+          Reactmore
+        </div>
+        <div class="brand-text">
+          Web Profile
+        </div>
       </div>
     </a>
 
@@ -99,12 +105,12 @@
       <a href="" class="icon ion-social-dribbble-outline"></a>
     </div>
   </header>
-  <div class="copy-bottom white boxed">© Jonny 2017.</div>
+  <div class="copy-bottom white boxed">
+    © Andry Setyoso <?= date('Y') ?>.
+  </div>
   <div class="lang-bottom white boxed">
     <div class="menu-lang">
-      <a href="" class="active">Eng</a>
-      <a href="">Fra</a>
-      <a href="">Ger</a>
+      <a href="" class="icon ion-social-github"> Github Repo</a>
     </div>
   </div>
   <div class="pagepiling">
@@ -114,14 +120,18 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title hidden-xs hidden-sm"><span>Introduce</span></div>
+              <div class="vertical-title hidden-xs hidden-sm">
+                <span>Introduce</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
                     <div class="row">
                       <div class="col-md-8 col-lg-6">
-                        <p class="subtitle-top">Welcome To<br>Jonny Design Studio</p>
-                        <h1 class="display-2 text-white"><span class="text-primary">Hello</span> my name is jonny.</h1>
+                        <p class="subtitle-top">
+                          Welcome To<br>Web Profile Studio
+                        </p>
+                        <h1 class="display-2 text-white"><span class="text-primary">Hello</span> my name is Andry.</h1>
                         <div class="hr-bottom"></div>
                       </div>
                     </div>
@@ -138,42 +148,62 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title text-dark hidden-xs hidden-sm"><span>what I do</span></div>
+              <div class="vertical-title text-dark hidden-xs hidden-sm">
+                <span>what I do</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
                     <div class="row">
                       <div class="col-md-5 col-lg-5">
-                        <p class="subtitle-top text-dark">About me</p>
+                        <p class="subtitle-top text-dark">
+                          About me
+                        </p>
                         <h2 class="title-uppercase">My mission is<br> <span class="text-primary">design &amp; develop</span> the best Websites around</h2>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta sit pariatur odio unde deleniti eveniet magni cum, ad iure, vel nisi minima vero voluptates ut ipsum amet iusto hic.
                       </div>
                       <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
                         <div class="progress-bars">
                           <div class="clearfix">
-                            <div class="number pull-left">Development</div>
-                            <div class="number pull-right">80%</div>
+                            <div class="number pull-left">
+                              Development
+                            </div>
+                            <div class="number pull-right">
+                              80%
+                            </div>
                           </div>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                           <div class="clearfix">
-                            <div class="number pull-left">WordPress</div>
-                            <div class="number pull-right">70%</div>
+                            <div class="number pull-left">
+                              WordPress
+                            </div>
+                            <div class="number pull-right">
+                              70%
+                            </div>
                           </div>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                           <div class="clearfix">
-                            <div class="number pull-left">Design</div>
-                            <div class="number pull-right">80%</div>
+                            <div class="number pull-left">
+                              Design
+                            </div>
+                            <div class="number pull-right">
+                              80%
+                            </div>
                           </div>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                           <div class="clearfix">
-                            <div class="number pull-left">Marketing</div>
-                            <div class="number pull-right">60%</div>
+                            <div class="number pull-left">
+                              Marketing
+                            </div>
+                            <div class="number pull-right">
+                              60%
+                            </div>
                           </div>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -202,7 +232,9 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title hidden-xs hidden-sm"><span>my works</span></div>
+              <div class="vertical-title hidden-xs hidden-sm">
+                <span>my works</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
@@ -214,7 +246,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>UCAM Minimalist Apartment</h5>
-                                <div class="project-category">House Design</div>
+                                <div class="project-category">
+                                  House Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -222,7 +256,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>Scadinavan Living Room</h5>
-                                <div class="project-category">House Design</div>
+                                <div class="project-category">
+                                  House Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -230,7 +266,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>Office For Fashion Brand Store</h5>
-                                <div class="project-category">Commercial Design</div>
+                                <div class="project-category">
+                                  Commercial Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -238,7 +276,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>Rennovate Toilet</h5>
-                                <div class="project-category">House Design</div>
+                                <div class="project-category">
+                                  House Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -246,7 +286,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>Rennovate Toilet</h5>
-                                <div class="project-category">House Design</div>
+                                <div class="project-category">
+                                  House Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -254,7 +296,9 @@
                             <a href="" class="project-box">
                               <div class="project-box-inner">
                                 <h5>Rennovate Toilet</h5>
-                                <div class="project-category">House Design</div>
+                                <div class="project-category">
+                                  House Design
+                                </div>
                               </div>
                             </a>
                           </div>
@@ -275,13 +319,17 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title text-dark hidden-xs hidden-sm"><span>Services</span></div>
+              <div class="vertical-title text-dark hidden-xs hidden-sm">
+                <span>Services</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
                     <div class="row">
                       <div class="col-md-5 col-lg-5">
-                        <p class="subtitle-top text-dark">My services</p>
+                        <p class="subtitle-top text-dark">
+                          My services
+                        </p>
                         <h2 class="title-uppercase">I like <span class="text-primary">to make</span> things easy and fun</h2>
                         <ul class="service-list">
                           <li><a href="">01. Development</a></li>
@@ -296,8 +344,12 @@
                           <img alt="" class="img-responsive" src="<?= PATH_ASSETS ?>front/images/1-470x490.jpg">
                           <div class="dots"></div>
                           <div class="experience-info">
-                            <div class="number">4</div>
-                            <div class="text">Years<br>Experience<br>Working</div>
+                            <div class="number">
+                              4
+                            </div>
+                            <div class="text">
+                              Years<br>Experience<br>Working
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -316,7 +368,9 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title hidden-xs hidden-sm"><span>Resume</span></div>
+              <div class="vertical-title hidden-xs hidden-sm">
+                <span>Resume</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
@@ -330,15 +384,27 @@
                             <div class="resume-inner">
                               <div class="resume-row">
                                 <h6 class="resume-type">SPECIALIZATION COURSE</h6>
-                                <p class="resume-study">University of studies, Poland, Cracow</p>
-                                <p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-                                <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, </p>
+                                <p class="resume-study">
+                                  University of studies, Poland, Cracow
+                                </p>
+                                <p class="resume-date text-primary">
+                                  Jan 2004 - Dec 2006
+                                </p>
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus,
+                                </p>
                               </div>
                               <div class="resume-row">
                                 <h6 class="resume-type">SPECIALIZATION COURSE</h6>
-                                <p class="resume-study">University of studies, Poland, Cracow</p>
-                                <p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-                                <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus</p>
+                                <p class="resume-study">
+                                  University of studies, Poland, Cracow
+                                </p>
+                                <p class="resume-date text-primary">
+                                  Jan 2004 - Dec 2006
+                                </p>
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -353,15 +419,27 @@
                             <div class="resume-inner">
                               <div class="resume-row">
                                 <h6 class="resume-type">WEBDESIGNER & FRONT-END</h6>
-                                <p class="resume-study">University of studies, Poland, Cracow</p>
-                                <p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-                                <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!</p>
+                                <p class="resume-study">
+                                  University of studies, Poland, Cracow
+                                </p>
+                                <p class="resume-date text-primary">
+                                  Jan 2004 - Dec 2006
+                                </p>
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!
+                                </p>
                               </div>
                               <div class="resume-row">
                                 <h6 class="resume-type">SPECIALIZATION COURSE</h6>
-                                <p class="resume-study">University of studies, Poland, Cracow</p>
-                                <p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-                                <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!!</p>
+                                <p class="resume-study">
+                                  University of studies, Poland, Cracow
+                                </p>
+                                <p class="resume-date text-primary">
+                                  Jan 2004 - Dec 2006
+                                </p>
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!!
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -381,7 +459,9 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title text-dark hidden-xs hidden-sm"><span>Partners</span></div>
+              <div class="vertical-title text-dark hidden-xs hidden-sm">
+                <span>Partners</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro overflow-hidden">
@@ -389,28 +469,44 @@
                       <div class="col-md-12">
                         <div class="row-partners">
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/1.png">
+                            </div>
                           </div>
                           <div class="col-partner">
-                            <div class="partner-inner"><img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png"></div>
+                            <div class="partner-inner">
+                              <img alt="" src="<?= PATH_ASSETS ?>front/images/partners/2.png">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -429,7 +525,9 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title hidden-xs hidden-sm"><span>testimonials</span></div>
+              <div class="vertical-title hidden-xs hidden-sm">
+                <span>testimonials</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro">
@@ -442,31 +540,49 @@
                         <div class="review-carousel owl-carousel">
                           <div class="review-carousel-item">
                             <div class="text">
-                              <p>“ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect.</p>
-                              <p> Thank you so much for all your design and expertise."</p>
+                              <p>
+                                “ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect.
+                              </p>
+                              <p>
+                                Thank you so much for all your design and expertise."
+                              </p>
                             </div>
                             <div class="review-author">
-                              <div class="author-name">David & Elisa</div>
+                              <div class="author-name">
+                                David & Elisa
+                              </div>
                               <i>Apartment view lake at Brooklyn</i>
                             </div>
                           </div>
                           <div class="review-carousel-item">
                             <div class="text">
-                              <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptates officia molestias fugit ipsum, blanditiis minima voluptatibus sit in laudantium doloribus, illum, reiciendis similique distinctio asperiores earum dolore eveniet eius."</p>
-                              <p> Thank you so much for all your design and expertise."</p>
+                              <p>
+                                “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptates officia molestias fugit ipsum, blanditiis minima voluptatibus sit in laudantium doloribus, illum, reiciendis similique distinctio asperiores earum dolore eveniet eius."
+                              </p>
+                              <p>
+                                Thank you so much for all your design and expertise."
+                              </p>
                             </div>
                             <div class="review-author">
-                              <div class="author-name">Amanda</div>
+                              <div class="author-name">
+                                Amanda
+                              </div>
                               <i>Apartment view lake at Brooklyn</i>
                             </div>
                           </div>
                           <div class="review-carousel-item">
                             <div class="text">
-                              <p>“ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect.</p>
-                              <p> Thank you so much for all your design and expertise."</p>
+                              <p>
+                                “ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Jonny Studio is perfect.
+                              </p>
+                              <p>
+                                Thank you so much for all your design and expertise."
+                              </p>
                             </div>
                             <div class="review-author">
-                              <div class="author-name">John</div>
+                              <div class="author-name">
+                                John
+                              </div>
                               <i>Apartment view lake at Brooklyn</i>
                             </div>
                           </div>
@@ -486,7 +602,9 @@
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
-              <div class="vertical-title text-dark hidden-xs hidden-sm"><span>contact</span></div>
+              <div class="vertical-title text-dark hidden-xs hidden-sm">
+                <span>contact</span>
+              </div>
               <div class="boxed">
                 <div class="container">
                   <div class="intro overflow-hidden">
@@ -508,7 +626,9 @@
                               <div class="form-group col-sm-12">
                                 <textarea name="message" required="" placeholder="Message*" aria-required="true"></textarea>
                               </div>
-                              <div class="col-sm-12"><button type="submit" class="btn">Post Comment</button></div>
+                              <div class="col-sm-12">
+                                <button type="submit" class="btn">Post Comment</button>
+                              </div>
                             </div>
                           </form>
                         </div>
@@ -532,7 +652,9 @@
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
           <h2 class="modal-title">Thank you</h2>
-          <p class="modal-subtitle">Your message is successfully sent...</p>
+          <p class="modal-subtitle">
+            Your message is successfully sent...
+          </p>
         </div>
       </div>
     </div>
@@ -546,7 +668,9 @@
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
           <h2 class="modal-title">Sorry</h2>
-          <p class="modal-subtitle"> Something went wrong </p>
+          <p class="modal-subtitle">
+            Something went wrong
+          </p>
         </div>
       </div>
     </div>

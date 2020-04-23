@@ -46,6 +46,18 @@ OwnFolder
 - Own_models.php
 - Views
 - index.php
+ .
+    ├── application                 # Default Folder
+    ├── modules                     # HMVC Folder
+    │   └── own               
+    │       │── controllers
+    │           └── Own.php
+    │       │── models 
+    │           └── Own_model.php              
+    │       │── views
+    │           │── Core (opsional)
+    │           └── index.php               
+    
 
 Own.php
 
@@ -96,7 +108,7 @@ class Own_model extends CI_Model
 }
 
 ```
-Own_views.php
+index.php
 
 ```html
 

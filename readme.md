@@ -6,10 +6,10 @@ Admin Template using AdminLTE v3.0.2
 
 ## Screenshoot
 
-![Frontend](https://raw.githubusercontent.com/oxygenfox/reactadmin/master/assets/img/mockup_home.jpg)
-
 ![Backend](https://raw.githubusercontent.com/oxygenfox/reactadmin/master/assets/img/mockup_backend.jpg)
-
+Dashboard View
+![Frontend](https://raw.githubusercontent.com/oxygenfox/reactadmin/master/assets/img/mockup_home.jpg)
+Home View
 
 ## Feature
 

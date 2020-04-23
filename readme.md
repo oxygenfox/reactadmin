@@ -39,13 +39,6 @@ License: Open source - MIT <http://opensource.org/licenses/MIT>
 
 Make New Folder <br />
 <br />
-OwnFolder
-- controllers
-- Own.php
-- Models
-- Own_models.php
-- Views
-- index.php
     
 ``` 
     .
@@ -63,7 +56,7 @@ OwnFolder
 
 
 
-Own.php
+> Own.php
 
 ```php
 <?php
@@ -91,7 +84,7 @@ class Own extends MX_Controller {
 ```
 <br/>
 
-Own_models.php
+> Own_models.php
 
 ```php
 <?php
@@ -112,7 +105,7 @@ class Own_model extends CI_Model
 }
 
 ```
-index.php
+> index.php
 
 ```html
 

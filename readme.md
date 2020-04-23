@@ -1,20 +1,22 @@
-<p align="center">
-  <img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400">
-</p>
-
-<p align="center">
-  <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="User Guide"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Language"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="AdminLTE"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-
-
 # Introduction
 
 This source using CodeIgniter v.3.1.11 + Modular (HMVC)<br />
 Admin Template using AdminLTE v3.0.2
+
+
+## Feature
+
+- Auth
+- Frontend
+- Dashboard
+- HMVC (Hiraki Module Views Controller)
+- RBAC (Role Base Access Controller)
+- Dynamic Menu
+- Ajax Validation
+- CRUD
+
+
+
 
 ## CodeIgniter v.3.1.11
 
@@ -30,3 +32,25 @@ Please see the license agreement <https://github.com/bcit-ci/CodeIgniter/blob/de
 Author: Colorlib<br />
 Website: AdminLTE.io <http://adminlte.io><br />
 License: Open source - MIT <http://opensource.org/licenses/MIT>
+
+
+## Add Custom Modules
+
+
+Make New Folder <br />
+<br />
+OwnFolder
+-controllers
+- Own_controller.php
+- Models
+- Own_models.php
+- Views
+- Own_views.php
+
+Own_controller.php
+
+
+Own_models.php
+
+
+Own_views.php

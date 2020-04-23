@@ -60,6 +60,15 @@
       <li data-menuanchor="page7">
         <a href="#page7">Contact</a>
       </li>
+      <li data-menuanchor="admin">
+        <?php if ($this->session->userdata('user') == null) : ?>
+          <a href="<?= base_url('admin') ?>">Login</a>
+        <?php else : ?>
+          <a href="<?= base_url('admin') ?>">Halo <?= $this->session->userdata('user'); ?>
+          </a>
+        <?php endif; ?>
+
+      </li>
     </ul>
     <div class="menu-footer right-boxed">
       <div class="social-list">
@@ -116,7 +125,7 @@
   <div class="pagepiling">
     <div data-anchor="page1" class="pp-scrollable text-white section section-1">
       <div class="scroll-wrap">
-        <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg1.jpg);"></div>
+        <div class="section-bg" style="background-image:url(assets/front/images/bg/bg1.jpg);"></div>
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
@@ -222,12 +231,12 @@
     <div data-anchor="page3" class="pp-scrollable text-white section section-3">
       <div class="scroll-wrap">
         <div class="bg-changer">
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2.jpg);"></div>
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2-2.jpg);"></div>
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2-3.jpg);"></div>
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2-4.jpg);"></div>
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2-5.jpg);"></div>
-          <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg2-6.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2-2.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2-3.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2-4.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2-5.jpg);"></div>
+          <div class="section-bg" style="background-image:url(assets/front/images/bg/bg2-6.jpg);"></div>
         </div>
         <div class="scrollable-content">
           <div class="vertical-centred">
@@ -364,7 +373,7 @@
     </div>
     <div data-anchor="page5" class="pp-scrollable text-white section section-6">
       <div class="scroll-wrap">
-        <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg3.jpg);"></div>
+        <div class="section-bg" style="background-image:url(assets/front/images/bg/bg3.jpg);"></div>
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
@@ -521,7 +530,7 @@
     </div>
     <div data-anchor="page7" class="pp-scrollable text-white section section-6">
       <div class="scroll-wrap">
-        <div class="section-bg" style="background-image:url(<?= PATH_ASSETS ?>front/images/bg/bg4.jpg);"></div>
+        <div class="section-bg" style="background-image:url(assets/front/images/bg/bg4.jpg);"></div>
         <div class="scrollable-content">
           <div class="vertical-centred">
             <div class="boxed boxed-inner">

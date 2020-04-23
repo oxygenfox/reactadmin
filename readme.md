@@ -46,7 +46,7 @@ OwnFolder
 - Own_models.php
 - Views
 - index.php
- .
+    .
     ├── application                 # Default Folder
     ├── modules                     # HMVC Folder
     │   └── own               
@@ -58,6 +58,16 @@ OwnFolder
     │           │── Core (opsional)
     │           └── index.php               
     
+
+    .
+    ├── ...
+    ├── docs                    # Documentation files (alternatively `doc`)
+    │   ├── TOC.md              # Table of contents
+    │   ├── faq.md              # Frequently asked questions
+    │   ├── misc.md             # Miscellaneous information
+    │   ├── usage.md            # Getting started guide
+    │   └── ...                 # etc.
+    └── ...
 
 Own.php
 

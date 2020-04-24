@@ -30,3 +30,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /tests/tests/
 /tests/results/
 db_cias.sql
+assets/database/backup-on-account-24-04-2020.sql
+assets/database/backup-on-system_settings-24-04-2020.sql

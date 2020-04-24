@@ -25,11 +25,11 @@
                         <button type="button" class="btn btn-success btn-sm" id="tambah"><i class="fas fa-plus"></i> Tambah</button>
                     </div>
                     <div class="card-body pad table-responsive">
-                        <table class="table table-bordered table-sm" id="myData" width="100%">
+                        <table class="table table-bordered table-sm dt-responsive nowrap" id="myData" width="100%">
                             <thead>
                                 <tr>
                                     <th width="5%">No</th>
-                                    <th>Nama SubMenu</th>
+                                    <th width="10%">Nama SubMenu</th>
                                     <th width="5%">Icon</th>
                                     <th>Url</th>
                                     <th width="10%">Order</th>

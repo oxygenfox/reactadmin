@@ -39,6 +39,7 @@ class Access extends MY_Controller
 			'menu' => $menu
 		];
 		$this->load->view('_layout/admin/head', $data);
+		$this->load->view('core/js', $data);
 		$this->load->view('index', $data);
 	}
 	public function aksi()

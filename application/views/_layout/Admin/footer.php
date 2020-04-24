@@ -1,7 +1,6 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; <?= date('Y') ?><a href="http://adminlte.io"> Reactadmin</a>.</strong>
-    All rights reserved.
+    <strong><?= $ss_settings->footer_left ?></strong>
+
     <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.0.2
-    </div>
+        <b><?= $ss_settings->footer_right ?></b>
 </footer>

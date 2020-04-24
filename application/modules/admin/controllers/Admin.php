@@ -17,7 +17,7 @@ class Admin extends MY_Controller
   {
     $data = [
       'title' => "Admin",
-      'ss_settings' => $this->db->get_where('sekolah', ['id_sekolah' => 1])->row(),
+      'ss_settings' => $this->db->get_where('system_settings', ['id' => 1])->row(),
     ];
     // $this->load->view('_layout/admin/head', $data);
     admin('index', $data);

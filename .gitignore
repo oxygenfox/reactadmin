@@ -29,6 +29,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
-db_cias.sql
-assets/database/backup-on-account-24-04-2020.sql
-assets/database/backup-on-system_settings-24-04-2020.sql
+db_cs.sql
+assets/database/*

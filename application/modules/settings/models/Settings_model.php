@@ -5,8 +5,8 @@ class Settings_model extends CI_Model
 {
     public function __construct()
     {
-        $this->table = 'sekolah';
-        $this->id = 'id_sekolah';
+        $this->table = 'system_settings';
+        $this->id = 'id';
     }
     public function getProfile()
     {

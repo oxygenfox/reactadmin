@@ -19,7 +19,7 @@ class Admin extends MY_Controller
       'title' => "Admin",
       'ss_settings' => $this->db->get_where('system_settings', ['id' => 1])->row(),
     ];
-    $this->load->view('_layout/admin/head', $data);
+    // $this->load->view('_layout/admin/head', $data);
     admin('index', $data);
   }
   public function dashboard()

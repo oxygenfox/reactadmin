@@ -26,7 +26,7 @@
                   for (var i = 0; i < data.length; i++) {
                       var sub = '';
                       for (var j = 0; j < data[i].submenu.length; j++) {
-                          submenu = '<li class="nav-item" data-url="' + data[i].submenu[j].url + '">' +
+                          submenu = '<li class="nav-item ml-2" data-url="' + data[i].submenu[j].url + '">' +
                               '<a href="#' + data[i].submenu[j].url + '" class="nav-link">' +
                               '<i class="' + data[i].submenu[j].icon + ' nav-icon"></i>' +
                               '<p>' + data[i].submenu[j].title + '</p>' +

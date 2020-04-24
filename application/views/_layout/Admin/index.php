@@ -5,17 +5,14 @@
   <div class="preloader">
     <div class="loading">
       <img src="<?= base_url() ?>assets/img/loader.gif" width="300">
-      <p class="text-center">
-        Harap Tunggu
-      </p>
+      <p class="text-center">Harap Tunggu</p>
     </div>
   </div>
 
 
   <div class="wrapper">
-    <!-- Navbar -->
     <?= $navbar ?>
-    <!-- /.navbar -->
+
 
     <!-- Main Sidebar Container -->
     <?= $sidebar ?>
@@ -26,6 +23,7 @@
     </div>
     <!-- /.content-wrapper -->
     <?= $footer ?>
+
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">

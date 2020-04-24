@@ -6,12 +6,13 @@ class Page extends MY_Controller
 
 	public function index()
 	{
-		// $this->load->view('_layout/header', ['title' => 'Opps']);
+		$this->load->view('_layout/admin/head', ['title' => 'Opps']);
 		$this->load->view('index');
 	}
 	public function error()
 	{
-		// $this->load->view('_layout/header', ['title' => 'Opps']);
+
+		$this->load->view('_layout/admin/head', ['title' => 'Opps']);
 		$this->load->view('error');
 	}
 }

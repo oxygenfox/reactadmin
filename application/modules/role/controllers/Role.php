@@ -29,7 +29,7 @@ class Role extends MY_Controller
 		$data = [
 			'title' => 'Role'
 		];
-		// $this->load->view('_layout/header', $data);
+		$this->load->view('_layout/admin/head', $data);
 		$this->load->view('core/js', $data);
 		$this->load->view('core/modals', $data);
 		$this->load->view('index', $data);

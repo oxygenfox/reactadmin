@@ -1,4 +1,11 @@
-<?= $css ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <?= $css ?>
+
+</head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
 

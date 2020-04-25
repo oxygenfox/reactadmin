@@ -70,19 +70,30 @@
                 url: '<?= site_url('role/aksi') ?>',
                 type: 'post',
                 data: new FormData(this),
+                dataType: 'json',
                 processData: false,
                 contentType: false,
                 async: false,
-                success: function(data) {
-                    var pesan = data;
-                    $(document).Toasts('create', {
-                        title: 'Success',
-                        body: pesan,
-                        class: 'bg-success mt-4 mr-4'
-                    });
+                success: function(result) {
+                    if (result.status == true) {
+                        toastr["success"](result.pesan);
+                    } else {
+                        toastr["error"](result.pesan);
+                    }
                     $('#myData').DataTable().ajax.reload();
                     $('#modal').modal('hide');
                 }
+                // Toast Manual
+                // success: function(data) {
+                //     var pesan = data;
+                //     $(document).Toasts('create', {
+                //         title: 'Success',
+                //         body: pesan,
+                //         class: 'bg-success mt-4 mr-4'
+                //     });
+                //     $('#myData').DataTable().ajax.reload();
+                //     $('#modal').modal('hide');
+                // }
             })
         })
     });

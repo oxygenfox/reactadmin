@@ -5,7 +5,7 @@
               "closeButton": true,
               "debug": false,
               "newestOnTop": true,
-              "progressBar": false,
+              "progressBar": true,
               "positionClass": "toast-top-right",
               "preventDuplicates": false,
               "showDuration": "300",
@@ -78,6 +78,13 @@
                   });
               }
           });
+          function swalert(method) {
+           Swal({
+             title: 'Success',
+             text: 'Data has been ' + method,
+             type: 'success'
+            });
+          };
           // $('#profile').click(function() {
           //     $('#show_data').load('<?= site_url('profile') ?>');
           // })
@@ -92,8 +99,9 @@
   <script src="<?= PATH_ASSETS ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- ChartJS -->
   <script src="<?= PATH_ASSETS ?>plugins/chart.js/Chart.min.js"></script>
-  <!-- Sparkline -->
+  <!-- Alert-->
   <script src="<?= PATH_ASSETS ?>plugins/toastr/toastr.min.js"></script>
+  <script src="<?= PATH_ASSETS ?>plugins/sweetalert2/sweetalert2.min.js"></script>
   <!-- JQVMap -->
   <script src="<?= PATH_ASSETS ?>plugins/jqvmap/jquery.vmap.min.js"></script>
   <script src="<?= PATH_ASSETS ?>plugins/jqvmap/maps/jquery.vmap.usa.js"></script>

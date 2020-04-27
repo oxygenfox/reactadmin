@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/icheck-bootstrap/icheck-bootstrap.min.css">
 <!-- JQVMap -->
 <link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/jqvmap/jqvmap.min.css">
-<link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/toastr/toastr.min.css">
+<!--<link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/toastr/toastr.min.css">-->
+<link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
 <!--<link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">-->
-<link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/sweetalert2/sweetalert2.min.css">
+<link rel="stylesheet" href="assets/plugins/sweetalert2/sweetalert2.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<?= PATH_ASSETS ?>dist/css/adminlte.min.css">
 <link rel="stylesheet" href="<?= PATH_ASSETS ?>dist/css/style.css">

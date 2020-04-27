@@ -193,6 +193,6 @@ class Divisi extends MY_Controller
     $this->form_validation->set_rules('honor_1', 'Honor Berita', 'trim|required|numeric');
     $this->form_validation->set_rules('honor_2', 'Honor Video', 'trim|required|numeric');
     $this->form_validation->set_rules('pph', 'PPH 21', 'trim|required|numeric');
-    $this->form_validation->set_rules('bpjs', 'PPH 21', 'trim|required|numeric');
+    $this->form_validation->set_rules('bpjs', 'BPJS', 'trim|required|numeric');
   }
 }

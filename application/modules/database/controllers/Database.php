@@ -36,6 +36,27 @@ class Database extends MY_Controller
         $this->load->view('index', $data);
     }
 
+    public function backup_all()
+    {
+        $this->load->dbutil();
+        $this->load->helper('file');
+
+        $config = array(
+            'format'  => 'zip',
+            'filename'  => 'database.sql'
+        );
+
+        $backup = &$this->dbutil->backup($config);
+
+        $db_name = 'all-backup-on-' . date("d-m-Y") . '.zip';
+        $save = 'assets/database/' . $db_name;
+
+        write_file($save, $backup);
+        $this->load->helper('download');
+        force_download($save, $backup);
+    }
+
+
     public function backup()
     {
 

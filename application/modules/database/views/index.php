@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-download"></i> &nbsp;Backup Table</button>
-                        <a href="<?= base_url() ?>database/backup" class="btn btn-success"><i class="fa fa-download"></i> &nbsp; Backup All Database</a>
+                        <a href="<?= base_url() ?>database/backup_all" class="btn btn-success"><i class="fa fa-download"></i> &nbsp; Backup All Database</a>
                     </div>
                 </div>
             </form>

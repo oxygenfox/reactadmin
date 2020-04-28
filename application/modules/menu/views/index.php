@@ -17,6 +17,7 @@
               <i class="fas fa-edit"></i>
               Menu Management
             </h3>
+
             <br>
             <hr>
             <button type="button" class="btn btn-success btn-sm" id="tambah"><i class="fas fa-plus"></i> Tambah</button>

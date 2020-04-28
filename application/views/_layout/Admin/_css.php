@@ -25,7 +25,9 @@
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 <!-- jQuery -->
-<script src="<?= PATH_ASSETS ?>plugins/jquery/jquery.min.js"></script>
+<!--<script src="<?= PATH_ASSETS ?>plugins/jquery/jquery.min.js"></script>-->
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?= PATH_ASSETS ?>plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- 引入vConsole的JS库 -->
@@ -33,6 +35,7 @@
 
 <script>
   $(document).ready(function() {
+
     setTimeout(function() {
       $(".preloader").fadeOut();
     }, 1000);
@@ -40,6 +43,8 @@
     if (page == "") page = "admin/dashboard";
     $('#show_data').load('<?= site_url() ?>' + '/' + page);
   });
+
+
 
   window.vConsole = new window.VConsole({
     defaultPlugins: ['system',

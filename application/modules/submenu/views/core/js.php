@@ -3,6 +3,8 @@
 <script src="<?= base_url() ?>assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="assets/plugins/icon-picker/css/fontawesome-iconpicker.min.css">
+<script src="assets/plugins/icon-picker/js/fontawesome-iconpicker.min.js"></script>
 
 
 <!-- js -->
@@ -72,6 +74,12 @@
     });
     $('#tambah').click(function() {
       $('.modal-body').html(form);
+      $('.icp-auto').iconpicker({
+        placement: 'bottom',
+        animation: false,
+        showFooter: false,
+        hideOnSelect: true,
+      });
       aksi =
       '<input type="hidden" name="aksi" id="aksi">' +
       '<input type="hidden" name="id_m" id="id_m">';
@@ -100,6 +108,13 @@
         $('#id').val(id);
         $('#title').val(title);
         $('#icon').val(icon);
+        $('.icp-auto').iconpicker({
+          placement: 'bottom',
+          animation: false,
+          showFooter: false,
+          hideOnSelect: true,
+
+        });
         $('#url').val(url);
         $('#id_m').val(id_menu);
         $('#modal').modal('show');

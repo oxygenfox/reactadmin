@@ -2,42 +2,162 @@
 if (!defined('BASEPATH'))
   exit('No direct script access allowed');
 
-class Datatable_model extends CI_Model {
+class Datatable_model extends CI_Model
+{
 
-  private $_order_id;
-  private $_name;
-  private $_city;
-  private $_startDate;
-  private $_endDate;
+  private $db2;
 
-  public function setOrderID($order_id) {
-    $this->_order_id = $order_id;
-  }
-  public function setName($name) {
-    $this->_name = $name;
-  }
-  public function setStartDate($startDate) {
-    $this->_startDate = $startDate;
-  }
-  public function setEndDate($endDate) {
-    $this->_endDate = $endDate;
-  }
-  // get Orders List
-  public function getOrders() {
-    $this->db->select(array('o.order_id', 'o.name', 'o.city', 'o.amount', 'o.order_date', 'o.status', 'o.amount'));
-    $this->db->from('order_details o');
-    if (!empty($this->_startDate) && !empty($this->_endDate)) {
-      $this->db->where('DATE_FORMAT(FROM_UNIXTIME(`o`.`order_date`),"%Y-%m-%d") BETWEEN\'' . $this->_startDate . '\' AND \'' . $this->_endDate . '\'');
-    }
-    if (!empty($this->_order_id)) {
-      $this->db->where('o.order_id', $this->_order_id);
-    }
-    if (!empty($this->_name)) {
-      $this->db->like('o.name', $this->_name, 'both');
-    }
-    $this->db->order_by('o.order_date', 'DESC');
-    $query = $this->db->get();
-    return $query->result_array();
+  public function __construct()
+  {
+    parent::__construct();
+    $this->table = 'wp_posts a';
+    $this->id = 'ID';
+    $this->column_order = array(null, 'display_name', 'post_title', 'post_name', 'post_date', 'name', null);
+    $this->column_search = array('display_name', 'post_title', 'post_name', 'post_date', 'name');
+    $this->order = array('a.post_date' => 'desc');
+    $this->db2 = $this->load->database('db2', TRUE);
   }
 
+  public function getRows($postData)
+  {
+    $this->_get_datatables_query($postData);
+    if ($postData['length'] != -1) {
+      $this->db2->limit($postData['length'], $postData['start']);
+    }
+    $query = $this->db2->get();
+    return $query->result();
+  }
+
+  public function countAll()
+  {
+    $this->db2->from('wp_posts as a');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+
+    return $this->db2->count_all_results();
+  }
+
+
+  public function countPost()
+  {
+    $this->db2->from('wp_posts a');
+    $this->db2->join('wp_users b', 'b.ID=a .post_author');
+    $this->db2->join('wp_postmeta c', 'c.post_id=a .ID');
+    $this->db2->join('wp_term_relationships d', 'd.object_id=a .ID');
+    $this->db2->join('wp_term_taxonomy e', 'e.term_taxonomy_id=d .term_taxonomy_id');
+    $this->db2->join('wp_terms f', 'f.term_id=e .term_id');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+    $this->db2->where('c.meta_key', 'tie_views');
+    $this->db2->where('e.taxonomy', 'category');
+    // $this->db2->where('DAY(post_date)',  'DAY(CURDATE())', FALSE);
+    $this->db2->where('MONTH(post_date)',  'MONTH(CURDATE())', FALSE);
+    $this->db2->where('YEAR(post_date)',  'YEAR(CURDATE())', FALSE);
+
+    return $this->db2->count_all_results();
+  }
+
+  public function countPost_interval()
+  {
+    $this->db2->from('wp_posts a');
+    $this->db2->join('wp_users b', 'b.ID=a .post_author');
+    $this->db2->join('wp_postmeta c', 'c.post_id=a .ID');
+    $this->db2->join('wp_term_relationships d', 'd.object_id=a .ID');
+    $this->db2->join('wp_term_taxonomy e', 'e.term_taxonomy_id=d .term_taxonomy_id');
+    $this->db2->join('wp_terms f', 'f.term_id=e .term_id');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+    $this->db2->where('c.meta_key', 'tie_views');
+    $this->db2->where('e.taxonomy', 'category');
+    // $this->db2->where('DAY(post_date)',  'DAY(CURDATE())', FALSE);
+    $this->db2->where('MONTH(post_date)',  'MONTH(CURDATE() - INTERVAL 1 MONTH)', FALSE);
+    $this->db2->where('YEAR(post_date)',  'YEAR(CURDATE())', FALSE);
+
+    return $this->db2->count_all_results();
+  }
+
+  public function countPost_day()
+  {
+    $this->db2->from('wp_posts a');
+    $this->db2->join('wp_users b', 'b.ID=a .post_author');
+    $this->db2->join('wp_postmeta c', 'c.post_id=a .ID');
+    $this->db2->join('wp_term_relationships d', 'd.object_id=a .ID');
+    $this->db2->join('wp_term_taxonomy e', 'e.term_taxonomy_id=d .term_taxonomy_id');
+    $this->db2->join('wp_terms f', 'f.term_id=e .term_id');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+    $this->db2->where('c.meta_key', 'tie_views');
+    $this->db2->where('e.taxonomy', 'category');
+    $this->db2->where('DAY(post_date)',  'DAY(CURDATE())', FALSE);
+    $this->db2->where('MONTH(post_date)',  'MONTH(CURDATE())', FALSE);
+    $this->db2->where('YEAR(post_date)',  'YEAR(CURDATE())', FALSE);
+
+    return $this->db2->count_all_results();
+  }
+
+  public function countFiltered($postData)
+  {
+    $this->_get_datatables_query($postData);
+    $query = $this->db2->get();
+    return $query->num_rows();
+  }
+  private function _get_datatables_query($postData)
+  {
+
+    $this->db2->from('wp_posts a');
+    $this->db2->join('wp_users b', 'b.ID=a .post_author');
+    $this->db2->join('wp_postmeta c', 'c.post_id=a .ID');
+    $this->db2->join('wp_term_relationships d', 'd.object_id=a .ID');
+    $this->db2->join('wp_term_taxonomy e', 'e.term_taxonomy_id=d .term_taxonomy_id');
+    $this->db2->join('wp_terms f', 'f.term_id=e .term_id');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+    $this->db2->where('c.meta_key', 'tie_views');
+    $this->db2->where('e.taxonomy', 'category');
+    // $this->db2->where('a.post_date >=', '2020-04-19');
+    // $this->db2->where('a.post_date <=', '2020-04-21');
+    if ($this->input->post('display_name')) {
+      $this->db2->where('b.display_name', $this->input->post('display_name'));
+    }
+    if ($this->input->post('post_date')) {
+      $this->db2->like('a.post_date', $this->input->post('post_date'));
+    }
+
+    $i = 0;
+    foreach ($this->column_search as $item) {
+      if ($postData['search']['value']) {
+        if ($i === 0) {
+          $this->db2->group_start();
+          $this->db2->like($item, $postData['search']['value']);
+        } else {
+          $this->db2->or_like($item, $postData['search']['value']);
+        }
+        if (count($this->column_search) - 1 == $i) {
+          $this->db2->group_end();
+        }
+      }
+      $i++;
+    }
+    if (isset($postData['order'])) {
+      $this->db2->order_by($this->column_order[$postData['order']['0']['column']], $postData['order']['0']['dir']);
+    } else if (isset($this->order)) {
+      $order = $this->order;
+      $this->db2->order_by(key($order), $order[key($order)]);
+    }
+  }
+
+  public function get_list_author()
+  {
+    $this->db2->select('display_name');
+    $this->db2->from('wp_users');
+    $this->db2->order_by('ID', 'asc');
+    $query = $this->db2->get();
+    $result = $query->result();
+
+    $auhtors = array();
+    foreach ($result as $row) {
+      $auhtors[] = $row->display_name;
+    }
+    return $auhtors;
+  }
 }

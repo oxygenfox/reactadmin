@@ -11,5 +11,9 @@
 <!-- overlayScrollbars -->
 <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
 <link rel="stylesheet" href="assets/front/css/jquery-ui-timepicker-addon.css">
+<!-- Daterange picker -->
+<link rel="stylesheet" href="<?= PATH_ASSETS ?>plugins/daterangepicker/daterangepicker.css">
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">

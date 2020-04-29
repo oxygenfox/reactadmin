@@ -1,0 +1,215 @@
+::1 - - [29/Apr/2020:12:52:14 +0700] "GET / HTTP/1.1" 200 31707
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/style.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/jquery.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/jquery.validate.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/smoothscroll.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/bootstrap.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/jquery.pagepiling.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/owl.carousel.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/js/scripts.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/bootstrap.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/ionicons.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/font-awesome.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/linearicons.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/owl.carousel.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/jquery.fullPage.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/css/jquery.pagepiling.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/1-470x490.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/partners/1.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/brand.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/partners/2.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/fonts/Linearicons.ttf HTTP/1.1" 200 498156
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/dots.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/fonts/poppins-regular-webfont.woff2 HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg1.jpg HTTP/1.1" 200 506133
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2.jpg HTTP/1.1" 200 506133
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2-5.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2-2.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2-3.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2-4.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg2-6.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg4.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:15 +0700] "GET /assets/front/images/bg/bg3.jpg HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:22 +0700] "GET /datatable HTTP/1.1" 200 3519
+::1 - - [29/Apr/2020:12:52:22 +0700] "GET /favicon.ico HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:12:52:29 +0700] "GET /admin/datatable HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /admin HTTP/1.1" 307 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/dist/css/adminlte.min.css HTTP/1.1" 200 656504
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/ionicons/ionicons.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/dist/js/adminlte.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/jquery/jquery.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:36 +0700] "GET /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:37 +0700] "GET /assets/img/favicon.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:45 +0700] "GET /admin HTTP/1.1" 307 -
+::1 - - [29/Apr/2020:12:52:45 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:52:47 +0700] "POST /auth HTTP/1.1" 303 -
+::1 - - [29/Apr/2020:12:52:47 +0700] "GET /admin HTTP/1.1" 200 15360
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/jqvmap/jqvmap.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/sweetalert2/sweetalert2.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/toastr/toastr.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/dist/css/style.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/daterangepicker/daterangepicker.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/summernote/summernote-bs4.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/chart.js/Chart.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/toastr/toastr.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/dist/vconsole.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/sweetalert2/sweetalert2.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/moment/moment.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/daterangepicker/daterangepicker.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/dist/js/pages/dashboard.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/dist/js/adminlte.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/dist/js/demo.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/img/loader.gif HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/img/profile/noimage1.png HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET //admin/dashboard HTTP/1.1" 200 5835
+::1 - - [29/Apr/2020:12:52:48 +0700] "POST /admin/menu HTTP/1.1" 200 1425
+::1 - - [29/Apr/2020:12:52:48 +0700] "GET /assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:12:52:56 +0700] "GET /admin/datatable HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:12:53:24 +0700] "GET /admin/datatable HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:12:53:34 +0700] "GET /datatable HTTP/1.1" 200 3519
+::1 - - [29/Apr/2020:12:53:37 +0700] "GET /datatable HTTP/1.1" 200 3519
+::1 - - [29/Apr/2020:12:55:21 +0700] "-" 408 -
+::1 - - [29/Apr/2020:12:55:21 +0700] "-" 408 -
+::1 - - [29/Apr/2020:12:55:22 +0700] "GET /datatable HTTP/1.1" 200 23972
+::1 - - [29/Apr/2020:12:55:23 +0700] "POST /admin/menu HTTP/1.1" 200 1425
+::1 - - [29/Apr/2020:12:55:49 +0700] "GET /admin/logout HTTP/1.1" 307 -
+::1 - - [29/Apr/2020:12:55:49 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:55:55 +0700] "GET /datatable HTTP/1.1" 200 23967
+::1 - - [29/Apr/2020:12:55:55 +0700] "POST /admin/menu HTTP/1.1" 303 -
+::1 - - [29/Apr/2020:12:55:55 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:56:28 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:56:30 +0700] "GET /datatable HTTP/1.1" 200 23967
+::1 - - [29/Apr/2020:12:56:30 +0700] "POST /admin/menu HTTP/1.1" 303 -
+::1 - - [29/Apr/2020:12:56:30 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:12:56:52 +0700] "GET /datatable HTTP/1.1" 200 23967
+::1 - - [29/Apr/2020:12:56:52 +0700] "POST /admin/menu HTTP/1.1" 303 -
+::1 - - [29/Apr/2020:12:56:52 +0700] "GET /auth HTTP/1.1" 200 5455
+::1 - - [29/Apr/2020:13:02:15 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:02:15 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /assets/dist/img/user1-128x128.jpg HTTP/1.1" 200 2879
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /assets/dist/img/user8-128x128.jpg HTTP/1.1" 200 5060
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /assets/dist/img/AdminLTELogo.png HTTP/1.1" 200 10380
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /assets/dist/img/user3-128x128.jpg HTTP/1.1" 200 3511
+::1 - - [29/Apr/2020:13:02:16 +0700] "GET /assets/dist/img/user2-160x160.jpg HTTP/1.1" 200 7070
+::1 - - [29/Apr/2020:13:02:28 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:02:31 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:02:33 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:02:41 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:07:19 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:07:19 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:07:21 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:07:36 +0700] "GET /datatable HTTP/1.1" 200 33725
+::1 - - [29/Apr/2020:13:08:48 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:08:48 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:08:48 +0700] "GET /datatable HTTP/1.1" 200 33545
+::1 - - [29/Apr/2020:13:09:39 +0700] "GET /datatable HTTP/1.1" 408 221
+::1 - - [29/Apr/2020:13:09:39 +0700] "GET /datatable HTTP/1.1" 200 33545
+::1 - - [29/Apr/2020:13:09:40 +0700] "GET /datatable HTTP/1.1" 200 33545
+::1 - - [29/Apr/2020:13:11:57 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:11:57 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:11:58 +0700] "GET /datatable HTTP/1.1" 200 33064
+::1 - - [29/Apr/2020:13:12:00 +0700] "GET /datatable HTTP/1.1" 200 33064
+::1 - - [29/Apr/2020:13:14:20 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:14:20 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:14:21 +0700] "GET /datatable HTTP/1.1" 200 33064
+::1 - - [29/Apr/2020:13:15:15 +0700] "GET /datatable HTTP/1.1" 408 221
+::1 - - [29/Apr/2020:13:15:15 +0700] "GET /datatable HTTP/1.1" 200 9724
+::1 - - [29/Apr/2020:13:16:01 +0700] "GET /datatable HTTP/1.1" 200 9391
+::1 - - [29/Apr/2020:13:16:26 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:16:26 +0700] "GET /datatable HTTP/1.1" 200 9386
+::1 - - [29/Apr/2020:13:16:45 +0700] "GET /datatable HTTP/1.1" 200 9386
+::1 - - [29/Apr/2020:13:20:42 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:20:42 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:20:43 +0700] "GET /datatable HTTP/1.1" 200 9170
+::1 - - [29/Apr/2020:13:21:46 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:21:47 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:06 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:08 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:09 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:11 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:12 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:14 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:39 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:22:41 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:23:05 +0700] "GET /datatable? HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:23:09 +0700] "GET /datatable? HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:23:14 +0700] "GET /datatable? HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:23:20 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:23:32 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:13:24:21 +0700] "-" 408 -
+::1 - - [29/Apr/2020:13:24:44 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:34:23 +0700] "GET /datatable HTTP/1.1" 200 9145
+::1 - - [29/Apr/2020:14:34:24 +0700] "GET /favicon.ico HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:37:02 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:37:02 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:37:03 +0700] "GET /datatable HTTP/1.1" 200 10480
+::1 - - [29/Apr/2020:14:38:09 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:38:09 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:38:10 +0700] "GET /datatable HTTP/1.1" 200 10659
+::1 - - [29/Apr/2020:14:38:30 +0700] "GET /datatable HTTP/1.1" 200 10659
+::1 - - [29/Apr/2020:14:42:30 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:42:30 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:42:31 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:42:31 +0700] "GET /assets/front/js/common.js HTTP/1.1" 200 2234
+::1 - - [29/Apr/2020:14:42:35 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:43:43 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:43:43 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:43:44 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:43:44 +0700] "GET /assets/front/js/common.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:43:46 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:43:47 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:43:54 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:43:55 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:44:43 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:44:43 +0700] "GET /assets/front/js/common.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:44:47 +0700] "GET /datatable HTTP/1.1" 200 10709
+::1 - - [29/Apr/2020:14:45:34 +0700] "GET /datatable HTTP/1.1" 200 10788
+::1 - - [29/Apr/2020:14:45:34 +0700] "GET /assets/front/css/jquery-ui-timepicker-addon.css HTTP/1.1" 200 1554
+::1 - - [29/Apr/2020:14:45:34 +0700] "GET /assets/front/js/common.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:47:01 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:47:01 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:47:02 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:47:02 +0700] "GET /assets/front/css/jquery-ui-timepicker-addon.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:47:02 +0700] "GET /assets/front/js/common.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:50:02 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:50:02 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:50:03 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:50:03 +0700] "GET /assets/front/css/jquery-ui-timepicker-addon.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:50:03 +0700] "GET /assets/front/js/common.js HTTP/1.1" 200 2123
+::1 - - [29/Apr/2020:14:50:03 +0700] "POST /%3C?=%20site_url(%27order/getOrderList%27);%20?%3E HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:51:04 +0700] "GET /db_sql.php?db=db_cs HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:51:50 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:52:14 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:52:47 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:52:47 +0700] "GET /assets/front/css/jquery-ui-timepicker-addon.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:52:47 +0700] "GET /assets/front/js/common.js HTTP/1.1" 200 2127
+::1 - - [29/Apr/2020:14:52:48 +0700] "POST /%3C?=%20site_url(%27datatable/getOrderList%27);%20?%3E HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:56:36 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:56:37 +0700] "GET /datatable HTTP/1.1" 500 894
+::1 - - [29/Apr/2020:14:57:00 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:57:00 +0700] "GET /assets/front/css/jquery-ui-timepicker-addon.css HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:57:00 +0700] "GET /assets/front/js/common.js HTTP/1.1" 304 -
+::1 - - [29/Apr/2020:14:57:00 +0700] "POST /%3C?=%20site_url(%27datatable/getOrderList%27);%20?%3E HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:57:09 +0700] "POST /%3C?=%20site_url(%27datatable/getOrderList%27);%20?%3E HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:57:11 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:57:12 +0700] "POST /%3C?=%20site_url(%27datatable/getOrderList%27);%20?%3E HTTP/1.1" 404 1130
+::1 - - [29/Apr/2020:14:58:17 +0700] "-" 408 -
+::1 - - [29/Apr/2020:14:58:28 +0700] "GET /datatable HTTP/1.1" 200 11334
+::1 - - [29/Apr/2020:14:58:29 +0700] "POST /%3C?=%20site_url(%27datatable/getOrderList%27);%20?%3E HTTP/1.1" 404 1130

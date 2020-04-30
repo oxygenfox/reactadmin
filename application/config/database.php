@@ -97,7 +97,7 @@ $db['default'] = array(
 
 $db['db2'] = array(
   'dsn' => '',
-  'hostname' => '185.237.144.234',
+  'hostname' => 'localhost',
   'username' => 'u8476361_admin', //username database kedua
   'password' => 'admin123', //password database kedua
   'database' => 'u8476361_wp854', //nama database kedua

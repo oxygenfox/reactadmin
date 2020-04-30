@@ -123,7 +123,7 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <input type="text" name="post_end_date" value="" class="form-control getDatePicker" id="post_end_date" placeholder="End date">
+                  <input type="text" name="post_end_date" value="" class="form-control getDatePicker" id="post_end_date" placeholder="Author">
                 </div>
               </div>
               <div class="col-lg-2">
@@ -220,6 +220,12 @@
       //   autoclose: true
       // });
 
+      $('#post_date').daterangepicker({
+        locale: {
+          format: 'YYYY-MM-DD'
+        }
+      });
+
       $('#btn-filter').click(function() {
         //button filter event click
         table.ajax.reload(); //just reload table
@@ -229,17 +235,14 @@
         $('#form-filter')[0].reset();
         table.ajax.reload(); //just reload table
       });
+
     })
   </script>
 
   <script>
     $(function() {
       //Date range picker
-      $('#post_date').daterangepicker({
-        locale: {
-          format: 'YYYY-MM-DD'
-        }
-      });
+
     })
   </script>
 

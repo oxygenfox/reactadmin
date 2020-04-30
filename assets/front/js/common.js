@@ -20,8 +20,9 @@ jQuery(document).on('click', '#filter-order-filter', function() {
 });
 // generate Order Table
 function generateOrderTable(element) {
+  var baseurl = window.location.origin;
   jQuery.ajax({
-    url: "<?= site_url('datatable/getOrderList'); ?>",
+    url: baseurl + 'datatable/getOrderList',
     data: {
       'order_id': element.order_id, 'name': element.name, 'start_date': element.startDate, 'end_date': element.endDate
     },

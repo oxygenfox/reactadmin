@@ -115,7 +115,8 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <form id="form-filter" class="row">
+
               <div class="col-lg-3">
                 <div class="form-group">
                   <input type="text" name="post_date" value="" class="form-control reservation" id="post_date" placeholder="Start date">
@@ -123,16 +124,21 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <input type="text" name="post_end_date" value="" class="form-control getDatePicker" id="post_end_date" placeholder="Author">
+                  <div class="input-group">
+                    <?php echo $form_author; ?>
+                    <span class="input-group-text">
+                      <span class="fa fa-list"></span>
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-3">
                 <div class="form-group row">
-                  <button name="filter_order_filter" type="button" class="btn btn-primary btn-block" id="btn-filter" value="filter"><i class="fa fa-search fa-fw"></i></button>
-                  <button name="filter_order_filter" type="button" class="btn btn-primary btn-block" id="btn-reset" value="filter">Reset</button>
+                  <button name="filter_order_filter" type="button" class="btn btn-primary  col-auto" id="btn-filter" value="filter"><i class="fa fa-search"></i>Filter</button>
+                  <button name="filter_order_filter" type="button" class="btn btn-primary  col-auto ml-3" id="btn-reset" value="filter"><i class="fa fa-search"></i>Reset</button>
                 </div>
               </div>
-            </div>
+            </form>
             <div class="row">
               <div class="col-lg-12">
                 <table class="table table-bordered table-sm dt-responsive nowrap" id="myData" width="100%">
@@ -222,7 +228,7 @@
 
       $('#post_date').daterangepicker({
         locale: {
-          format: 'YYYY-MM-DD'
+          format: 'YYYY/MM/DD'
         }
       });
 
@@ -239,12 +245,7 @@
     })
   </script>
 
-  <script>
-    $(function() {
-      //Date range picker
 
-    })
-  </script>
 
 </body>
 

@@ -104,6 +104,7 @@ class Datatable_model extends CI_Model
   private function _get_datatables_query($postData)
   {
 
+
     $this->db2->from('wp_posts a');
     $this->db2->join('wp_users b', 'b.ID=a .post_author');
     $this->db2->join('wp_postmeta c', 'c.post_id=a .ID');
@@ -114,13 +115,18 @@ class Datatable_model extends CI_Model
     $this->db2->where('a.post_type', 'post');
     $this->db2->where('c.meta_key', 'tie_views');
     $this->db2->where('e.taxonomy', 'category');
-    // $this->db2->where('a.post_date >=', '2020-04-19');
-    // $this->db2->where('a.post_date <=', '2020-04-21');
+
     if ($this->input->post('display_name')) {
       $this->db2->where('b.display_name', $this->input->post('display_name'));
     }
     if ($this->input->post('post_date')) {
-      $this->db2->like('a.post_date', $this->input->post('post_date'));
+      // $this->db2->like('a.post_date', $this->input->post('post_date'));
+      $cari = $this->input->post('post_date');
+      $post_date = explode("-", $cari);
+      $tanggal_awal = date('Y-m-d', strtotime(str_replace('/', '-', $post_date[0])));
+      $tanggal_akhir = date('Y-m-d', strtotime(str_replace('/', '-', $post_date[1])));
+      $this->db2->where('a.post_date >=', $tanggal_awal);
+      $this->db2->where('a.post_date <=', $tanggal_akhir);
     }
 
     $i = 0;

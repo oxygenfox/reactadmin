@@ -20,12 +20,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Blank Page</h1>
+              <h1></h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Blank Page</li>
+                <li class="breadcrumb-item active">Data Berita</li>
               </ol>
             </div>
           </div>
@@ -39,7 +39,7 @@
         <!-- Default box -->
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Title</h3>
+            <h3 class="card-title">#ceklissatu.com</h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -161,7 +161,7 @@
           </div>
           <!-- /.card-body -->
           <div class="card-footer">
-            Footer
+
           </div>
           <!-- /.card-footer-->
         </div>

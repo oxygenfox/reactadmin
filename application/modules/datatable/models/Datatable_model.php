@@ -76,6 +76,21 @@ class Datatable_model extends CI_Model
     return $this->db2->count_all_results();
   }
 
+  public function countPostRp()
+  {
+    $auth = array('6', '7', '8', '13', '14', '15');
+
+    $this->db2->from('wp_posts a');
+    $this->db2->join('wp_users b', 'b.ID=a .post_author');
+    $this->db2->where('a.post_status', 'publish');
+    $this->db2->where('a.post_type', 'post');
+    $this->db2->where_in('a.post_author', $auth);
+    $this->db2->where('MONTH(post_date)',  'MONTH(CURDATE())', FALSE);
+    $this->db2->where('YEAR(post_date)',  'YEAR(CURDATE())', FALSE);
+
+    return $this->db2->count_all_results();
+  }
+
   public function countPost_day()
   {
     $this->db2->from('wp_posts a');
@@ -127,6 +142,9 @@ class Datatable_model extends CI_Model
       $tanggal_akhir = date('Y-m-d', strtotime(str_replace('/', '-', $post_date[1])));
       $this->db2->where('a.post_date >=', $tanggal_awal);
       $this->db2->where('a.post_date <=', $tanggal_akhir);
+    } else {
+      $this->db2->where('MONTH(post_date)',  'MONTH(CURDATE())', FALSE);
+      $this->db2->where('YEAR(post_date)',  'YEAR(CURDATE())', FALSE);
     }
 
     $i = 0;

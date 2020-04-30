@@ -22,6 +22,7 @@ class Datatable extends MY_Controller
     $data = [
       'tipage' => 'Reactmore',
       'form_author' => form_dropdown('', $opt, '', 'id="display_name" class="form-control"'),
+      'rp_records' => $this->model->countPostRp(),
       'records' => $this->model->countPost(),
       'records_day' => $this->model->countPost_day(),
       'records_interval' => $this->model->countPost_interval(),

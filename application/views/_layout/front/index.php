@@ -99,7 +99,7 @@
                 <div class="small-box bg-danger">
                   <div class="inner">
                     <?php
-                    $rtotal = $records * 10000;
+                    $rtotal = $rp_records * 10000;
 
                     ?>
                     <h3>Rp.<?= number_format($rtotal) ?></h3>
@@ -161,7 +161,9 @@
           </div>
           <!-- /.card-body -->
           <div class="card-footer">
-
+            <span class="text-info small">* Data Default Adalah Bulan <?= date('F') ?> Tahun <?= date('Y') ?></span>
+            <br />
+            <span class="text-info small">* Untuk Mencari Data Harian Gunakan Range Tanggal Awal untuk Hari Yang di cari dan range Tanggal Akhir Lebihkan Satu Hari</span>
           </div>
           <!-- /.card-footer-->
         </div>
